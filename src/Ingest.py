@@ -11,18 +11,29 @@ class TCEnergy:
     providerPrefix = "TCEnergy"
     docBaseUrl = "https://ebb.anrpl.com/Notices/"
     noticesUrl = f"{docBaseUrl}Notices.asp"
+    noticeTypes = ["Critical", "PlanSvcOut"]
 
     def fetch_data(self):
+
+        for noticeType in self.noticeTypes:
+            self.fetch_notice(noticeType)
+
+    def fetch_notice(self, noticeType):
         params = {
             "sPipelineCode": "ANR",
-            "sSubCategory": "Critical"
+            "sSubCategory": noticeType
         }
-        print(f"TCEnergy Notices URL: {self.noticesUrl}")
+        print(f"TCEnergy Notices ({noticeType}) URL: {self.noticesUrl}")
         response = requests.get(url=self.noticesUrl, params=params)
         data = response.text
 
         soup = BeautifulSoup(data, 'html.parser')
         tableList = soup.find_all('table')
+
+        if len(tableList) < 4:
+            print("Error: Not enough tables found in the response.")
+            return
+
         # Likely a better way to find the right table than the 4th one
         table = tableList[3]
 
@@ -64,29 +75,30 @@ class LngConfig:
     providerPrefix = "LngConfig"
     # url = "https://lngconnectionapi.cheniere.com/api/Notice/FilterNotices?tspNo=200&pageId=9&noticeIdFrom=-1&noticeIdTo=-1&filter=effective&fromDate=05/04/2024&toDate=05/04/2025"
     noticesUrl = "https://lngconnectionapi.cheniere.com/api/Notice/FilterNotices"
+
     # docUrl = "https://lngconnectionapi.cheniere.com/api/Notice/GetNoticeById?tspNo=200&noticeId=1475"
     # docUrl = "https://lngconnectionapi.cheniere.com/api/Notice/GetNoticeById"
     docUrl = "https://lngconnectionapi.cheniere.com/api/Notice/Download"
 
-    headers = {
-        "accept": "application/json, text/plain, */*",
-        "accept-language": "en-US,en;q=0.9",
-        "content-type": "application/json",
-    }
+    noticeTypes = ["9", "11"]
 
     def fetch_data(self):
+        for noticeType in self.noticeTypes:
+            self.fetch_notice(noticeType)
+
+    def fetch_notice(self, noticeType):
 
         params = {
             "tspNo": "200",
-            "pageId": "9",
+            "pageId": noticeType,
             "noticeIdFrom": "-1",
             "noticeIdTo": "-1",
             "filter": "effective",
             "fromDate": "05/04/2024",
             "toDate": "05/04/2025"
         }
-        print(f"LngConfig Notices URL: {self.noticesUrl}")
-        response = requests.get(url=self.noticesUrl, headers=self.headers, params=params)
+        print(f"LngConfig Notices ({noticeType}) URL: {self.noticesUrl}")
+        response = requests.get(url=self.noticesUrl, params=params)
 
         data = response.json()
 
@@ -95,7 +107,7 @@ class LngConfig:
             filename = os.path.join("..", "data", f"{self.providerPrefix}_{noticeId}.txt")
 
             if not os.path.exists(filename):
-                docResponse = requests.get(url=self.docUrl, headers=self.headers, params={"tspNo": "200", "noticeId": noticeId})
+                docResponse = requests.get(url=self.docUrl, params={"tspNo": "200", "noticeId": noticeId})
                 print(f"Writing document for noticeId: {noticeId} to {filename}")
                 with open(filename, "wb") as file:
                     file.write(docResponse.content)
