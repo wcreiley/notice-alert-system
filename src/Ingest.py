@@ -17,9 +17,9 @@ class TCEnergy:
             "sPipelineCode": "ANR",
             "sSubCategory": "Critical"
         }
+        print(f"TCEnergy Notices URL: {self.noticesUrl}")
         response = requests.get(url=self.noticesUrl, params=params)
         data = response.text
-        print(f"TCEnergy Notices URL: {self.noticesUrl}")
 
         soup = BeautifulSoup(data, 'html.parser')
         tableList = soup.find_all('table')
@@ -85,10 +85,10 @@ class LngConfig:
             "fromDate": "05/04/2024",
             "toDate": "05/04/2025"
         }
+        print(f"LngConfig Notices URL: {self.noticesUrl}")
         response = requests.get(url=self.noticesUrl, headers=self.headers, params=params)
 
         data = response.json()
-        pprint(data[0]['noticeId'])
 
         for notice in data:
             noticeId = notice['noticeId']
