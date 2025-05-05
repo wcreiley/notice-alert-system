@@ -207,7 +207,7 @@ safetensors==0.5.3
 scikit-learn==1.6.1
 scipy==1.15.2
 sentence-transformers==4.1.0
-setuptools==80.1.0
+setuptools==80.3.0
 shapely==2.1.0
 shellingham==1.5.4
 six==1.17.0
