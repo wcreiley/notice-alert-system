@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 1709
+             Critical Notice Description : Critical
+               Notice Status Description : Supersede
+                      Posting Date/Time: : 4/10/2025 9:54:07 AM
+                 Notice Type Description : Capacity Constraint
+              Notice Effective Date/Time : 4/10/2025 9:51:00 AM
+                  Prior Notice Identifer : 1708
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL – CT109451-GILLIS-TRUNK-R Location Off Rate - LIFTED Effective April 10, 2025
+                             Notice Text : Creole Trail Pipeline, L.P. (“CTPL”) notifies customers that the location off rate restriction on CT109451-GILLIS-TRUNK-R has been removed.  Therefore, effective immediately, all transport services are available. Please contact your Customer Services Representative at 713-375-5900 or email at Cheniere.CTPL@Cheniere.com with any questions.

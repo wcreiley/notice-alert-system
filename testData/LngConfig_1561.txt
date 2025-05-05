@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 1561
+             Critical Notice Description : Critical
+               Notice Status Description : Supersede
+                      Posting Date/Time: : 11/6/2024 2:57:22 PM
+                 Notice Type Description : Operational Alert
+              Notice Effective Date/Time : 11/6/2024 2:56:00 PM
+                  Prior Notice Identifer : 1560
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL Unplanned Outage – Gillis Compression Station Eff 11.06.24 - RESOLVED
+                             Notice Text :  CTPL experienced an unplanned outage at the GILLIS COMPRESSOR STATION on Wednesday, November 6, 2024.  This issue has been resolved.  CTPL has returned to full capacity effective immediately. If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com.    

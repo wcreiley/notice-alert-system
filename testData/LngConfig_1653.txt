@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 1653
+             Critical Notice Description : Critical
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 2/22/2025 2:11:32 PM
+                 Notice Type Description : Computer System Status
+              Notice Effective Date/Time : 2/22/2025 2:10:00 PM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL Data Center Power Outage – February 22, 2025
+                             Notice Text :  CTPL experienced a system wide data center power outage at approximately 8am on Saturday, February 22, 2025.  As the result of this outage, the Quorum system, including Customer Activities Website was unavailable.  The system is now working again.   We apologize for any inconvenience this may have caused you.  Please reach out to Customer Services at 713-375-5900 or email ctplscheduling@cheniere.com for any assistance that is needed.
