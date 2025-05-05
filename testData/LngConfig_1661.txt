@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 1661
+             Critical Notice Description : Critical
+               Notice Status Description : Supersede
+                      Posting Date/Time: : 2/25/2025 3:13:35 PM
+                 Notice Type Description : Computer System Status
+              Notice Effective Date/Time : 2/25/2025 3:11:00 PM
+                  Prior Notice Identifer : 1655
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : RESOLVED - CTPL Quorum System Issues – 2.25.25
+                             Notice Text :  On February 22, 2025, CTPL Measurement Server experienced technical difficulties due to a Data Center Power Outage causing missing data records which could have potentially impacted Allocations, Gas Quality reports, and Gas Volume Statements for gas days February 21st – 23rd.    All data has been updated and the issue has been resolved.  If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com with any questions.
