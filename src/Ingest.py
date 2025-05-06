@@ -1,9 +1,9 @@
-import asyncio
 import os
-from pprint import pprint
+import time
+import shutil
 import dotenv
 import requests
-
+import argparse
 from bs4 import BeautifulSoup
 
 class TCEnergy:
@@ -31,7 +31,7 @@ class TCEnergy:
         tableList = soup.find_all('table')
 
         if len(tableList) < 4:
-            print("Error: Not enough tables found in the response.")
+            print("Error: No data found in the response.")
             return
 
         # Likely a better way to find the right table than the 4th one
@@ -53,13 +53,12 @@ class TCEnergy:
 
             parsedResults.append(parsedResult) if len(parsedResult) > 1 else None
 
-        # https://ebb.anrpl.com/Notices/NoticeView.asp?sPipelineCode=ANR&sSubCategory=Critical&sNoticeId=12347
         for result in parsedResults:
 
             noticeId = result['Notice ID']
             viewUrl = result['Notice Type Desc']
 
-            filename = os.path.join("data", f"{self.providerPrefix}_{noticeId}.html")
+            filename = os.path.join("testData", f"{self.providerPrefix}_{noticeId}.html")
 
             if not os.path.exists(filename):
                 docResponse = requests.get(url=self.docBaseUrl + viewUrl)
@@ -73,11 +72,8 @@ class TCEnergy:
 class LngConfig:
 
     providerPrefix = "LngConfig"
-    # url = "https://lngconnectionapi.cheniere.com/api/Notice/FilterNotices?tspNo=200&pageId=9&noticeIdFrom=-1&noticeIdTo=-1&filter=effective&fromDate=05/04/2024&toDate=05/04/2025"
     noticesUrl = "https://lngconnectionapi.cheniere.com/api/Notice/FilterNotices"
 
-    # docUrl = "https://lngconnectionapi.cheniere.com/api/Notice/GetNoticeById?tspNo=200&noticeId=1475"
-    # docUrl = "https://lngconnectionapi.cheniere.com/api/Notice/GetNoticeById"
     docUrl = "https://lngconnectionapi.cheniere.com/api/Notice/Download"
 
     noticeTypes = ["9", "11"]
@@ -94,8 +90,8 @@ class LngConfig:
             "noticeIdFrom": "-1",
             "noticeIdTo": "-1",
             "filter": "effective",
-            "fromDate": "05/04/2022",
-            "toDate": "05/04/2025"
+            "fromDate": "05/04/2020",
+            "toDate": "05/06/2025"
         }
         print(f"LngConfig Notices ({noticeType}) URL: {self.noticesUrl}")
         response = requests.get(url=self.noticesUrl, params=params)
@@ -104,7 +100,7 @@ class LngConfig:
 
         for notice in data:
             noticeId = notice['noticeId']
-            filename = os.path.join("data", f"{self.providerPrefix}_{noticeId}.txt")
+            filename = os.path.join("testData", f"{self.providerPrefix}_{noticeId}.txt")
 
             if not os.path.exists(filename):
                 docResponse = requests.get(url=self.docUrl, params={"tspNo": "200", "noticeId": noticeId})
@@ -122,10 +118,50 @@ class Ingest:
     def __init__(self):
         dotenv.load_dotenv()
 
+        parser = argparse.ArgumentParser(description="Parse command-line arguments.")
+        parser.add_argument("--testData", action="store_true", default=False, help="Test data flag")
+        parser.add_argument("--sleep", type=int, default=10, help="Sleep time in seconds")
+        args = parser.parse_args()
+
+        self.test_data_flag = args.testData
+        self.test_sleep = args.sleep
+
+    def ingest_data(self):
+        LngConfig().fetch_data()
+        TCEnergy().fetch_data()
+
+
+    def test_data(self):
+        def interleave_arrays(arr1, arr2):
+            # Interleave elements from both arrays
+            interleaved = [item for pair in zip(arr1, arr2) for item in pair]
+
+            # Add remaining elements from the longer array
+            interleaved.extend(arr1[len(arr2):] if len(arr1) > len(arr2) else arr2[len(arr1):])
+
+            return interleaved
+
+        print("Testing data ingestion...")
+
+        lng_files = [f for f in os.listdir("testData") if "lng" in f.lower() and os.path.isfile(os.path.join("testData", f))]
+        tcenergy_files = [f for f in os.listdir("testData") if "tcenergy" in f.lower() and os.path.isfile(os.path.join("testData", f))]
+
+        # Sort files by id
+        sorted_lng_files = sorted(lng_files, key=lambda f: int(f.split("_")[1].split(".")[0]))
+        sorted_tcenergy_files = sorted(tcenergy_files, key=lambda f: int(f.split("_")[1].split(".")[0]))
+
+        for file in interleave_arrays(sorted_lng_files, sorted_tcenergy_files):
+            print(f"Processing file: {file}")
+            shutil.copy(f"testData/{file}", f"data/{file}")
+            time.sleep(self.test_sleep)
+
     def run(self):
         print("Running Ingest...")
-        data = LngConfig().fetch_data()
-        data = TCEnergy().fetch_data()
+
+        if self.test_data_flag:
+            self.test_data()
+        else:
+            self.ingest_data()
 
 
 if __name__ == "__main__":
