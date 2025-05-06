@@ -13,7 +13,8 @@ class AlertService:
 
     def build_capacity_constraint_prompt(self):
         return """
-            Alert me of any capacity constraints.
+            What are all the capacity constraints?
+            Alert me of any new capacity constraints.
             
             Identify the notice type.
             Identify the location.
@@ -24,7 +25,14 @@ class AlertService:
 
     def build_site_capacity_constraint_prompt(self):
         return """
-            Alert me of the site names of any capacity constraints.
+            What are the site names of any capacity constraints.
+            Alert me of any new capacity constraints.
+        """
+
+    def build_creole_trail_prompt(self):
+        return """
+            Are there any outages for Creole Trail.
+            Alert me of any outages.
         """
 
     def run(self):
@@ -32,7 +40,8 @@ class AlertService:
 
         active_prompts = [
             self.build_site_capacity_constraint_prompt(),
-            self.build_capacity_constraint_prompt()
+            self.build_capacity_constraint_prompt(),
+            self.build_creole_trail_prompt()
         ]
 
         for prompt in active_prompts:
