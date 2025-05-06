@@ -1,0 +1,13 @@
+                                  Notice : Planned Service Outages
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 320
+             Critical Notice Description : Planned Service Outages
+               Notice Status Description : Supersede
+                      Posting Date/Time: : 8/12/2020 10:36:17 AM
+                 Notice Type Description : Maintenance
+              Notice Effective Date/Time : 8/12/2020 10:35:00 AM
+                  Prior Notice Identifer : 318
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : Update: CTPL – Gillis Compressor Station – Outage  August 24 – 27
+                             Notice Text : Update - CTPL will perform maintenance at the GILLIS COMPRESSOR STATION which will reduce the pipeline capacity during the following Gas Days:                                             Gas Day Time Event Available Capacity  AUG 24, 2020  3:00 a.m.  Complete shutdown  0  AUG 25, 2020  7:00 p.m.  Restore to   full capacity  1.53 Bcf/d  AUG 25, 2020  3:00 a.m.  Complete shutdown  0  AUG 26, 2020  7:00 p.m.  Restore to   full capacity  1.53 Bcf/d  AUG 26, 2020  3:00 a.m.  Complete shutdown  0  AUG 27, 2020  7:00 p.m.  Restore to   full capacity  1.53 Bcf/d   Any updates to this schedule will be posted as they become available.If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com.  

@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 1295
+             Critical Notice Description : Critical
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 2/6/2024 12:27:02 PM
+                 Notice Type Description : Computer System Status
+              Notice Effective Date/Time : 2/6/2024 12:23:00 PM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL Quorum Database/Invoice Report Issues – 2.6.2024
+                             Notice Text : Creole Trail Pipeline Quorum Database/Invoice Report is currently experiencing technical difficulties. We are working to resolve this issue.  Currently Invoices for January 2024 are delayed, we will post updates as they become available.Please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com for immediate needs.     

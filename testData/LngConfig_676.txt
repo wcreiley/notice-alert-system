@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 676
+             Critical Notice Description : Critical
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 1/20/2022 3:21:05 PM
+                 Notice Type Description : Operational Alert
+              Notice Effective Date/Time : 1/20/2022 3:22:00 PM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL – System Operating Conditions Effective January 20, 2022 until further notice
+                             Notice Text :  Creole Trail Pipeline, LP (“CTPL”) notifies customers of limited flexibility to manage imbalances, and strongly encourage all shippers/operators to manage their system requirements to ensure a concurrent balance of receipts and deliveries daily.  Specifically, shippers/operators should not create Due To pipeline (short to the pipeline) imbalances effective January 20, 2022 until further notice. CTPL maybe required to issue reductions at locations where receipts are off rate to ensure the operational integrity of the system.   Please contact your Customer Services Representative at 713-375-5900 or email at Cheniere.CTPL@Cheniere.com with any questions. 

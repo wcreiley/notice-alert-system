@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 579
+             Critical Notice Description : Critical
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 8/11/2021 6:11:43 PM
+                 Notice Type Description : Customer Services Update
+              Notice Effective Date/Time : 8/11/2021 6:09:00 PM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL - TSA Directive – Required Password Changes
+                             Notice Text :   TSA Directive – Required   Password Changes      The United States Transportation Security   Administration (TSA) has issued several mandatory cybersecurity directives to   the pipeline sector.  Cheniere is committed to complying with these   directives to support our safe and reliable operations.  The most recent directive   mandates that Cheniere must reset all user account passwords.  As such, we are asking all users to   change their current password by Monday, August 23, 2021.  After that date, any users who have not changed their passwords will be required to do so upon next login.How to change   your passwordOpen https://myaccount.cheniere.com/ChangePasswordEnter the following: Username: Old Password: Enter a new password of your   choice and then click Change. Please note that your new   password must meet the following requirements: Not contain all or part of        the user's account name Be at least eight characters in length Not repeat any of the previous eight passwords.Contain characters from three of the following four categories:English uppercase characters (A through Z)English lowercase characters (a through z) Base 10 digits (0 through 9) Non-alphabetic characters (for example, !, $, #, %)After your password is   successfully reset, you may open the application at the address below. Please   use Chrome for the best performance. https://pipeline.cheniere.com   If you   have any questions related to this change, please contact DL-QuorumProductionSupport@cheniere.com.      

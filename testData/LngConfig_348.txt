@@ -1,0 +1,16 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 348
+             Critical Notice Description : Critical
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 9/18/2020 1:30:17 PM
+                 Notice Type Description : Pipeline Conditions
+              Notice Effective Date/Time : 9/18/2020 12:39:00 PM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL Pipeline Capacity Constraint effective September 18, 2020
+                             Notice Text :  CTPL
+pipeline capacity is restricted to 1,400,000 dths/day due to critically low pressure
+from upstream receipt location CT109461-GILLIS-LEAP effective September 18, 2020 until further notice.  If you have any questions, please contact Customer Services at
+713-375-5900 or email Cheniere.CTPL@Cheniere.com.

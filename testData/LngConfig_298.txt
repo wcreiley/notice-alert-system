@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 298
+             Critical Notice Description : Critical
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 6/15/2020 2:38:45 PM
+                 Notice Type Description : Maintenance
+              Notice Effective Date/Time : 6/15/2020 2:36:00 PM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL – Gillis Compressor Station – Unscheduled Maintenance Effective June 16 – 17, 2020
+                             Notice Text :  CTPL will perform an unplanned pigging operation at the GILLIS COMPRESSOR STATION which will reduce the pipeline capacity for GD 16 through GD 17.  The pipeline capacity will be reduced to 600,000 Dth/d.  CTPL anticipates a return to full capacity on or before 3:00 p.m., GD 17.  Any updates to this schedule will be posted as they become available.If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com.  

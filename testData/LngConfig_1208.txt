@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 1208
+             Critical Notice Description : Critical
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 10/15/2023 2:18:53 PM
+                 Notice Type Description : Computer System Status
+              Notice Effective Date/Time : 10/15/2023 2:06:00 PM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL Quorum System Issues - October 15, 2023
+                             Notice Text : Creole Trail Pipeline’s Quorum System Application experienced technical difficulties on the evening of Saturday October 15.  All system reports, including but not limited to, reduction notices and scheduled quantity’s for Gas Day 16 and Gas Day 15 were not sent out for corresponding Evening and ID3 cycles.  Currently, the issue has not been resolved. All system reports for Gas Day 16 ID1 and ID2 have not been sent out. We are working to resolve this issue.  CTPL will post updates as they become available.  If you have any questions, contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com with any questions.
