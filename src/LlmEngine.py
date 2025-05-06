@@ -212,48 +212,13 @@ class LlmEngine:
     # Part IV: send alerts about responses which changed significantly.
     def send_alerts(self):
 
-        # def build_prompt_compare_answers(new: str, old: str) -> str:
-        #     prompt = f"""
-        #         Are the two following responses different?
-        #         Answer with Yes or No.
-        #
-        #         First response: "{old}"
-        #
-        #         Second response: "{new}"
-        #         """
-        #     print(f"TODOWCR: prompt: {prompt}")
-        #     return prompt
-
-        # def decision_to_bool(decision: str) -> bool:
-        #     return "yes" in decision.lower()
-
-        # def acceptor(new: str, old: str) -> bool:
-        #     if new == old:
-        #         return False
-        #
-        #     prompt = [dict(role="system", content=build_prompt_compare_answers(new, old))]
-        #     decision = asyncio.run(self.model.__wrapped__(prompt, max_tokens=20))
-        #     return decision_to_bool(decision)
-
         @pw.udf
         def construct_notification_message(query: str, response: str) -> str:
             return f'New response for question "{query}":\n{response}'
 
-        # However, for the queries with alerts the processing continues
-        # whenever the set of documents retrieved for a query changes,
-        # the table of responses is updated.
         self.responses = self.responses.filter(pw.this.alert_enabled)
 
-        # Each update is compared with the previous one for deduplication
-        # deduplicated_responses = pw.stateful.deduplicate(
-        #     self.responses,
-        #     col=self.responses.response,
-        #     acceptor=acceptor,
-        #     instance=self.responses.query_id,
-        # )
-
         # Significant alerts are sent to the user
-        # alerts = deduplicated_responses.select(
         alerts = self.responses.select(
             message=construct_notification_message(pw.this.query, pw.this.response)
         )
