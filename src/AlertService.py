@@ -2,6 +2,7 @@ import os
 import requests
 from dotenv import load_dotenv
 
+
 class AlertService:
 
     def __init__(self):
@@ -54,4 +55,3 @@ class AlertService:
 
 if __name__ == "__main__":
     AlertService().run()
-
