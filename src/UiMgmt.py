@@ -14,7 +14,8 @@ class UiMgmt:
         self.api_port = int(os.environ.get("PATHWAY_REST_CONNECTOR_PORT", 8080))
         self.url = f"http://{self.api_host}:{self.api_port}/"
 
-        st.session_state.messages = []
+        if "messages" not in st.session_state:
+            st.session_state.messages = []
 
     def run(self):
 
@@ -45,7 +46,7 @@ class UiMgmt:
             st.session_state.messages.append({"role": "user", "content": prompt})
 
             for message in st.session_state.messages:
-                if message["role"] == "user" and "alert" in prompt.lower():
+                if message["role"] == "user":
                     st.sidebar.text(f"📩 {message['content']}")
 
             data = {"query": prompt, "user": "user"}
