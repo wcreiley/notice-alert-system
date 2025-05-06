@@ -28,16 +28,19 @@ class LlmEngine:
 
         dotenv.load_dotenv()
 
+        # Required configuration
         self.api_key: str = os.environ.get("OPENAI_API_KEY", "")
+        self.slack_alert_channel_id = os.environ.get("SLACK_ALERT_CHANNEL_ID", "")
+        self.slack_alert_token = os.environ.get("SLACK_ALERT_TOKEN", "")
+
+        # Default Configuration
         self.host: str = os.environ.get("PATHWAY_REST_CONNECTOR_HOST", "0.0.0.0")
         self.port: int = int(os.environ.get("PATHWAY_REST_CONNECTOR_PORT", "8080"))
-        self.embedder_locator: str = "text-embedding-ada-002"
-        self.embedding_dimension: int = 1536
-        self.model_locator: str = "gpt-3.5-turbo"
-        self.max_tokens: int = 400
-        self.temperature: float = 0.0
-        self.slack_alert_channel_id=os.environ.get("SLACK_ALERT_CHANNEL_ID", "")
-        self.slack_alert_token=os.environ.get("SLACK_ALERT_TOKEN", "")
+        self.embedder_locator: str = os.environ.get("EMBEDDER_LOCATOR", "text-embedding-ada-002")
+        self.embedding_dimension: int = int(os.environ.get("EMBEDDING_DIMENSION", "1536"))
+        self.model_locator: str = os.environ.get("MODEL_LOCATOR", "gpt-3.5-turbo")
+        self.max_tokens: int = int(os.environ.get("MAX_TOKEN", "400"))
+        self.temperature: float = float(os.environ.get("TEMPERATURE", "0.0"))
         self.embedder = None
         self.index = None
         self.model = None
@@ -45,8 +48,8 @@ class LlmEngine:
         self.response_writer = None
         self.responses = None
 
+    # Part I: Build index
     def build_index(self):
-        # Part I: Build index
 
         self.embedder = OpenAIEmbedder(
             api_key=self.api_key,
@@ -55,15 +58,10 @@ class LlmEngine:
             cache_strategy=pw.asynchronous.DefaultCache(),
         )
 
-        # We start building the computational graph. Each pathway variable represents a
-        # dynamically changing table.
+        # We start building the computational graph. Each pathway variable represents a dynamically changing table.
 
-        # Can we just point at the url?
-        # pw.io.http.read()
-        # files = pw.io.fs.read("./data/", format="plaintext_by_file", with_metadata=True)
         files = pw.io.fs.read("./data/", format="binary", with_metadata=True)
 
-        # parser = ParseUnstructured()
         parser = ParseUtf8()
         documents = files.select(texts=parser(pw.this.data))
         documents = documents.flatten(pw.this.texts)
@@ -85,8 +83,8 @@ class LlmEngine:
             data_embedding=enriched_documents.data, data=enriched_documents, n_dimensions=self.embedding_dimension
         )
 
+    # Part II: receive queries, detect intent and prepare cleaned query
     def build_queries(self):
-        # Part II: receive queries, detect intent and prepare cleaned query
 
         @pw.udf
         def build_prompt_check_for_alert_request_and_extract_query(query: str) -> str:
@@ -134,6 +132,7 @@ class LlmEngine:
         query += query.select(
             prompt=build_prompt_check_for_alert_request_and_extract_query(query.query)
         )
+
         query += query.select(
             tupled=split_answer(
                 self.model(
@@ -142,6 +141,7 @@ class LlmEngine:
                 )
             ),
         )
+
         query = query.select(
             pw.this.user,
             alert_enabled=pw.this.tupled[0],
@@ -156,8 +156,8 @@ class LlmEngine:
         self.query = query
         self.response_writer = response_writer
 
+    # Part III: respond to queries
     def process_queries(self):
-        # Part III: respond to queries
 
         @pw.udf
         def build_prompt(documents, query):
@@ -180,8 +180,7 @@ class LlmEngine:
 
         # The context is a dynamic table: Pathway updates it each time:
         # - a new query arrives
-        # - a source document is changed significantly enough to change the set of
-        #   nearest neighbors
+        # - a source document is changed significantly enough to change the set of nearest neighbors
         query_context = self.query + self.index.get_nearest_items(self.query.data, k=3).select(
             documents_list=pw.this.chunk
         ).with_universe_of(self.query)
@@ -210,8 +209,8 @@ class LlmEngine:
         # send the answers back to the asking users
         self.response_writer(output)
 
+    # Part IV: send alerts about responses which changed significantly.
     def send_alerts(self):
-        # Part IV: send alerts about responses which changed significantly.
 
         # def build_prompt_compare_answers(new: str, old: str) -> str:
         #     prompt = f"""
@@ -228,10 +227,6 @@ class LlmEngine:
         # def decision_to_bool(decision: str) -> bool:
         #     return "yes" in decision.lower()
 
-        @pw.udf
-        def construct_notification_message(query: str, response: str) -> str:
-            return f'New response for question "{query}":\n{response}'
-
         # def acceptor(new: str, old: str) -> bool:
         #     if new == old:
         #         return False
@@ -239,6 +234,10 @@ class LlmEngine:
         #     prompt = [dict(role="system", content=build_prompt_compare_answers(new, old))]
         #     decision = asyncio.run(self.model.__wrapped__(prompt, max_tokens=20))
         #     return decision_to_bool(decision)
+
+        @pw.udf
+        def construct_notification_message(query: str, response: str) -> str:
+            return f'New response for question "{query}":\n{response}'
 
         # However, for the queries with alerts the processing continues
         # whenever the set of documents retrieved for a query changes,
@@ -256,7 +255,6 @@ class LlmEngine:
         # Significant alerts are sent to the user
         # alerts = deduplicated_responses.select(
         alerts = self.responses.select(
-            # alerts = responses.select(
             message=construct_notification_message(pw.this.query, pw.this.response)
         )
         pw.io.slack.send_alerts(alerts.message, self.slack_alert_channel_id, self.slack_alert_token)
@@ -267,7 +265,7 @@ class LlmEngine:
         self.process_queries()
         self.send_alerts()
 
-        # Finally, we execute the computation graph
+        # Execute the computation graph
         pw.run(monitoring_level=pw.MonitoringLevel.NONE)
 
 
