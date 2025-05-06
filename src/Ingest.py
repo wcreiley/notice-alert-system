@@ -94,7 +94,7 @@ class LngConfig:
             "noticeIdFrom": "-1",
             "noticeIdTo": "-1",
             "filter": "effective",
-            "fromDate": "05/04/2024",
+            "fromDate": "05/04/2022",
             "toDate": "05/04/2025"
         }
         print(f"LngConfig Notices ({noticeType}) URL: {self.noticesUrl}")
