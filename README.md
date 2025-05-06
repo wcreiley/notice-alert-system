@@ -40,7 +40,7 @@
 - `python src/LlmEngine.py`
 
 #### Alert Service
-- `python src.AlertService.py`
+- `python src/AlertService.py`
 
 #### UI Management
 - `streamlit run src/UiMgmt.py --server.port 8501 --server.address 0.0.0.0`
