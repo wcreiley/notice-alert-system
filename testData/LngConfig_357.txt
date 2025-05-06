@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 357
+             Critical Notice Description : Critical
+               Notice Status Description : Supersede
+                      Posting Date/Time: : 10/2/2020 9:53:32 AM
+                 Notice Type Description : Maintenance
+              Notice Effective Date/Time : 10/2/2020 9:50:00 AM
+                  Prior Notice Identifer : 354
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL – Gillis Compressor Station – Unscheduled Maintenance Effective October 6, 2020 - UPDATE
+                             Notice Text :  As previously posted, CTPL has scheduled an unplanned maintenance operation at the GILLIS COMPRESSOR STATION for GD 6 as listed in the table below. CTPL will begin its cooldown which will limit its available capacity to 930,000 Dth beginning at 12:00 a.m. October 6, 2020.                     Start Date End Date Location Maintenance Transport Impact (Dths) Available Capacity (Dths) Duration     10/06/2020 10/06/2020 Gillis Compressor Station Compressor Maintenance 600,000 930,000 1 Day  CTPL anticipates a return to full capacity effective GD 7.  Any updates to this schedule will be posted as they become available.If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com.  

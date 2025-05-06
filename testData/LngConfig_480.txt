@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 480
+             Critical Notice Description : Critical
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 3/4/2021 12:20:28 PM
+                 Notice Type Description : Maintenance
+              Notice Effective Date/Time : 3/4/2021 12:15:00 PM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL – CT109461-GILLIS-LEAP-R – Maintenance Effective March 16, 2021
+                             Notice Text :  CTPL will perform maintenance activities at CT109461-GILLIS-LEAP-R (LEAP Meter Station) on Tuesday, March 16, 2021 from 9:00 a.m. through 5:00 p.m.  During this maintenance activity the LEAP Meter Station capacity will be restricted to 714,000 Dth. Below is a summary of the daily capacity impact throughout this maintenance activity: Begin End Gas Day Location Maintenance Transport Impact   (Dths) Available Capacity (Dths) March 16, 20219:00 a.m. March 16, 20215:00 p.m. 16 LEAP Meter Station Meter Tube Cleaning 306,000 714,000  This reflects current information as of March 4, 2021.  Updates to this schedule will be posted as they become available. If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com. 

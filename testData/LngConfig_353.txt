@@ -1,0 +1,13 @@
+                                  Notice : Planned Service Outages
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 353
+             Critical Notice Description : Planned Service Outages
+               Notice Status Description : Supersede
+                      Posting Date/Time: : 9/27/2020 12:11:58 PM
+                 Notice Type Description : Maintenance
+              Notice Effective Date/Time : 9/27/2020 12:11:00 PM
+                  Prior Notice Identifer : 340
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL 2020 Planned Outage and Maintenance Summary – Q3 – REMINDER 
+                             Notice Text :  Per CTPL’s Planned Service Outage Posting on September 9, 2020, CTPL provides a reminder of the following planned maintenance operation at the GILLIS COMPRESSOR STATION: Start Date  End Date  Location  Maintenance  Impact (Dths)  Capacity (Dths)  Duration  9/28/2020  10/2/2020 Gillis Compressor Station Compressor Maintenance 300,000 1,230,000 4 Days  If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com.   

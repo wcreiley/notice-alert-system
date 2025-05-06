@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 331
+             Critical Notice Description : Critical
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 8/25/2020 10:48:25 AM
+                 Notice Type Description : Force Majeure
+              Notice Effective Date/Time : 8/25/2020 10:45:00 AM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL Force Majeure Effective August 26, 2020
+                             Notice Text :  CTPL is currently monitoring the expected path of Hurricane Laura and any potential impacts this storm may cause to its facilities.   Based on the current trajectory CTPL will cease flow beginning GD 26 and continuing until further notice due to absence of emergency response. CTPL hereby declares a Force Majeure in accordance with Section 6.8 of the General Terms and Conditions of its FERC Gas Tariff.   CTPL will continue to monitor the progress and trajectory of Hurricane Laura and will post additional information and updates as necessary. If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com.

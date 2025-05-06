@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 880
+             Critical Notice Description : Critical
+               Notice Status Description : Supersede
+                      Posting Date/Time: : 10/7/2022 4:06:29 PM
+                 Notice Type Description : Computer System Status
+              Notice Effective Date/Time : 10/7/2022 4:05:00 PM
+                  Prior Notice Identifer : 877
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL - Quorum External Users – Login Issues 10.07.22 - Update
+                             Notice Text :  With regards to the issue that customers are not able to login to the MyQuorum website, CTPL has made Microsoft aware of the issue and Microsoft confirms the issue is on their end.  We will continue to escalate the problem with them to get a resolution.  Meanwhile, we ask shippers/operators to contact your customer service representative for changes to nominations, confirmations, etc.  We will work with shippers/operators on late submissions, if necessary.  Thank you for your understanding and patience.   Please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com for immediate needs.   

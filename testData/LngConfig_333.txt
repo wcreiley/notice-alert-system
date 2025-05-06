@@ -1,0 +1,19 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 333
+             Critical Notice Description : Critical
+               Notice Status Description : Supersede
+                      Posting Date/Time: : 8/28/2020 2:32:47 PM
+                 Notice Type Description : Force Majeure
+              Notice Effective Date/Time : 8/28/2020 2:29:00 PM
+                  Prior Notice Identifer : 331
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL Force Majeure Update #1
+                             Notice Text :  CTPL is in the process of
+assessing the impact of any potential storm damage caused by Hurricane Laura at
+its facilities. In order to maintain safe system operations and for the safety
+of CTPL's personnel, CTPL will not accept nominations until further notice. 
+CTPL will continue to monitor the progress during this
+outage and will post additional updates as necessary.If you have any questions, please contact
+Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com.

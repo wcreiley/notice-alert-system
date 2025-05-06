@@ -1,0 +1,13 @@
+                                  Notice : Planned Service Outages
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 304
+             Critical Notice Description : Planned Service Outages
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 9/9/2020 3:00:51 PM
+                 Notice Type Description : Maintenance
+              Notice Effective Date/Time : 7/8/2020 3:20:00 PM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL 2020 Planned Outage and Maintenance Summary – Q3
+                             Notice Text :  Cheniere Creole Trail Pipeline 2020 Planned Outage and Maintenance Summary – Q3  This is a summary of the CTPL 2020 Planned Outage and Maintenance Projects for Q3.  This document is subject to change to reflect the updated status of outage and maintenance projects.*All scheduled dates represent gas days as defined in the CTPL Tariff to mean a period of twenty-four consecutive hours, beginning and ending at 9:00 a.m. (Central Clock Time). If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com.                                 Start Date  End Date  Location  Maintenance  Impact (Dths)  Capacity (Dths)  Duration  8/03/2020  8/17/2020  Gillis Compressor Station Compressor Maintenance 600,000 930,000 14 Days  9/14/2020  9/18/2020  Gillis Compressor Station Compressor Maintenance 300,000 1,230,000 4 Days   

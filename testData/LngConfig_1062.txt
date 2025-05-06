@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 1062
+             Critical Notice Description : Critical
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 6/3/2023 10:20:15 PM
+                 Notice Type Description : Maintenance
+              Notice Effective Date/Time : 6/3/2023 10:18:00 PM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL – Unscheduled Maintenance – Gillis Compressor Station – 06.03.23 
+                             Notice Text :  Due to inclement weather in the area, Unit 1400 at the Gillis Compressor Station experienced unscheduled maintenance that required immediate repairs.  Unit 1400 is currently unavailable awaiting programing. Effective immediately and continuing until further notice, transport services will be limited to 1Bcf until the work has been completed. CTPL will continue to monitor the progress during this outage and will post additional updates as necessary.  If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com.

@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 1157
+             Critical Notice Description : Critical
+               Notice Status Description : Supersede
+                      Posting Date/Time: : 8/26/2023 8:49:13 PM
+                 Notice Type Description : Computer System Status
+              Notice Effective Date/Time : 8/26/2023 8:48:00 PM
+                  Prior Notice Identifer : 1152
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL Quorum Database/Server Issues – RESOLVED - 8.26.23
+                             Notice Text :  CTPL reports that the technical issues we were experiencing have been resolved.     Please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com for immediate needs.  

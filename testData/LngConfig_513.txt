@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 513
+             Critical Notice Description : Critical
+               Notice Status Description : Supersede
+                      Posting Date/Time: : 4/8/2021 9:10:41 AM
+                 Notice Type Description : Planned Service Outage
+              Notice Effective Date/Time : 4/8/2021 9:09:00 AM
+                  Prior Notice Identifer : 511
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL 2021 Planned Outage and Maintenance Summary – updated April 8, 2021
+                             Notice Text : Below is an updated summary of CTPL’s Planned Outage and Maintenance Projects for 2021.  This update provides maintenance activity details at the Gillis Compressor Station for GD 18-20.    Quarter Begin End Gas Day(s) Location Maintenance Transport Impact (Dths) Available Capacity (Dths) Duration *Q2 04/19/20213:00 a.m. 4/20/202112:00 p.m. 18 - 20 Gillis Compressor Station Compressor Station Maintenance GD 18 – 45,900GD 19 – 306,000GD 20 – 38,250 GD 18 – 1,484,100GD 19 – 1,224,000GD 20 – 1,491,750 2.5 days   Q2 05/03/2021 05/07/2021 3 – 7 Gillis Compressor StationCompressor Station Maintenance 306,000 1,224,000 5 days   Q2 06/07/2021 06/11/2021 7 – 11 Gillis Compressor Station Compressor Station Maintenance 306,000 1,224,000 5 days   Q3 08/16/2021 08/20/2021 16 – 20 Gillis Compressor Station Compressor Station Maintenance 306,000 1,224,000 5 days   Q1 03/16/20219:00 a.m. 3/16/20215:00 p.m. 16 LEAP Meter   Station Meter Tube   Cleaning 306,000 714,000 Completed Items marked with *denotes updates from previous posting.This notice reflects current information as of April 8, 2021.  This summary is subject to change as the year progresses to reflect the updated status of all planned outages and maintenance projects.   CTPL will post updates as they become available.  If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com.

@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 671
+             Critical Notice Description : Critical
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 1/13/2022 3:34:48 PM
+                 Notice Type Description : Planned Service Outage
+              Notice Effective Date/Time : 1/13/2022 3:34:00 PM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL – Gillis Compressor Station – Scheduled Maintenance Effective January 18, 2022 
+                             Notice Text :  The following planned maintenance operation will be performed at the following location(s):Begin End Gas Day(s) Location Maintenance Transport Impact(Dths) Available Capacity (Dths) Duration 1/18/2022  1:00 a.m. 1/18/2022  7:00 p.m. 17-18 Gillis Compressor Station Compressor Station Maintenance 200,000 1,300,000 18 Hours This update reflects current information as of January 13, 2022.  Any updates to this schedule will be posted as they become available. If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com. 

@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 349
+             Critical Notice Description : Critical
+               Notice Status Description : Supersede
+                      Posting Date/Time: : 10/1/2020 11:22:45 AM
+                 Notice Type Description : Pipeline Conditions
+              Notice Effective Date/Time : 9/21/2020 8:10:00 AM
+                  Prior Notice Identifer : 348
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : LIFTED - CTPL Pipeline Capacity Constraint 
+                             Notice Text :  CTPL notifies shipper that the Capacity Constraint posted on September 18, 2020 has been LIFTED and capacity has been reinstated to full capacity (1.5 Bcf) effective immediately. If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com.

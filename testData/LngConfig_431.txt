@@ -1,0 +1,13 @@
+                                  Notice : Planned Service Outages
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 431
+             Critical Notice Description : Planned Service Outages
+               Notice Status Description : Supersede
+                      Posting Date/Time: : 1/20/2021 8:23:05 AM
+                 Notice Type Description : Maintenance
+              Notice Effective Date/Time : 1/20/2021 8:19:00 AM
+                  Prior Notice Identifer : 422
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL 2021 Planned Outage and Maintenance Summary – Q1 – ESD Effective January 21, 2021
+                             Notice Text : Below is an  updated summary of the CTPL 2021 Planned Outage and Maintenance Projects for Q1.    Beginning January 21, 2021 (GD 21) at 9:00 am through 5:00 pm, CTPL will perform its Annual Emergency Shut Down Test at the GILLIS COMPRESSOR STATION. This will reduce station capacity to zero flow for 8 hours. GILLIS COMPRESSOR STATION will be back online at full capacity starting at 5:00 pm GD 21. CT109461-GILLIS-LEAP will continue to “free flow” around GILLIS COMPRESSOR STATION with available deliveries to TETCO-GILLIS.  This maintenance activity will reduce pipeline capacity for GD 21 as follows: Gas Day Location Maintenance Transport Impact (Dths) Available Capacity (Dths) 21 Gillis Compressor Station Annual Emergency Shut Down Test 510,000 1,020,000  This update reflects current information as of January 20, 2021.  Any updates to this schedule will be posted as they become available.  If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com.

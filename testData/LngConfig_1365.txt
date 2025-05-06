@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 1365
+             Critical Notice Description : Critical
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 4/8/2024 8:45:11 AM
+                 Notice Type Description : Computer System Status
+              Notice Effective Date/Time : 4/8/2024 8:44:00 AM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL Quorum System Issues – 4.8.24
+                             Notice Text :  Creole Trail Pipeline Measurement Server is currently experiencing technical difficulties.  For gas day April 6, 2024, Gas Volume Statements and Gas Quality Data have not been posted.  We are working to resolve this issue as quickly as possible.  CTPL will post updates as they become available.   If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com with any questions.

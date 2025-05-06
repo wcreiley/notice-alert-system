@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 429
+             Critical Notice Description : Critical
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 1/12/2021 7:59:45 AM
+                 Notice Type Description : Maintenance
+              Notice Effective Date/Time : 1/12/2021 8:03:00 AM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL – Gillis Compressor Station – Unscheduled Maintenance Effective January 19, 2021
+                             Notice Text :  An unplanned maintenance operation at the GILLIS COMPRESSOR STATION will reduce the pipeline capacity for GD 19 as follows:Start Date End Date Location Maintenance Transport Impact (Dths) Available Capacity (Dths) Duration January 19, 2021 3:00 AM January 20, 20215:00 PM Gillis Compressor Station Compressor Maintenance 612,000 918,000 1.5 Days  This update reflects current information as of January 12, 2021.  Any updates to this schedule will be posted as they become available.If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com.  

@@ -1,0 +1,15 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 365
+             Critical Notice Description : Critical
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 10/9/2020 3:52:13 PM
+                 Notice Type Description : Gas Quality
+              Notice Effective Date/Time : 10/9/2020 3:47:00 PM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL Unplanned Maintenance due to Gas Quality effective October 10, 2020
+                             Notice Text :  Due to a Gas Quality event, an
+unplanned maintenance operation at the CT109461 – GILLIS-LEAP-R will reduce the meter capacity to 500,000 Dth/d  beginning at 9:00 am on October 10, 2020 for up to 12 hours.   CTPL anticipates a return to full capacity once the situation is resolved.  Any updates to this schedule will be posted as they become available.If you
+have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com.  

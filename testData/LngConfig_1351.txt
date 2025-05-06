@@ -1,0 +1,19 @@
+                                  Notice : Planned Service Outages
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 1351
+             Critical Notice Description : Planned Service Outages
+               Notice Status Description : Supersede
+                      Posting Date/Time: : 3/28/2024 11:39:29 AM
+                 Notice Type Description : Maintenance
+              Notice Effective Date/Time : 3/28/2024 11:37:00 AM
+                  Prior Notice Identifer : 1331
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL 2024 Planned Outage and Maintenance Summary – 3.28.2024 
+                             Notice Text :  Below is a summary of
+the CTPL 2024 Planned Outage and Maintenance Projects.   Items marked with * denotes updates from
+previous posting. This notice reflects current information as of March 28,
+2024.  This summary is subject to change as the year progresses to reflect
+the updated status of all planned outages and maintenance projects.  CTPL
+will post updates as they become available.  If you have any questions,
+please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com.

@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 1370
+             Critical Notice Description : Critical
+               Notice Status Description : Supersede
+                      Posting Date/Time: : 4/9/2024 8:28:56 AM
+                 Notice Type Description : Computer System Status
+              Notice Effective Date/Time : 4/9/2024 8:28:00 AM
+                  Prior Notice Identifer : 1365
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL Quorum System Issues – 4.9.24 – Resolved 
+                             Notice Text :  Creole Trail Pipeline Measurement Server issue has been resolved.   If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com with any questions. 

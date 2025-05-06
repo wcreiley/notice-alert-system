@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 1133
+             Critical Notice Description : Critical
+               Notice Status Description : Initiate
+                      Posting Date/Time: : 8/7/2023 2:12:40 PM
+                 Notice Type Description : Computer System Status
+              Notice Effective Date/Time : 8/7/2023 2:12:00 PM
+                  Prior Notice Identifer : 
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL - Quorum External Users – Operator Screens Unavailable - 8.07.23
+                             Notice Text :  CTPL is aware that some customers are having problems logging into the MyQuorum Website.  We are working to resolve the issue as quickly as possible.   Please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com for immediate needs.  

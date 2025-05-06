@@ -1,0 +1,13 @@
+                                  Notice : Critical
+                            TSP Name/TSP : Creole Trail 
+                               Notice ID : 622
+             Critical Notice Description : Critical
+               Notice Status Description : Supersede
+                      Posting Date/Time: : 10/29/2021 2:16:02 PM
+                 Notice Type Description : Planned Service Outage
+              Notice Effective Date/Time : 10/29/2021 2:14:00 PM
+                  Prior Notice Identifer : 618
+ Required Response Indicator Description : No response
+                      Response Date/Time : 
+                                 Subject : CTPL 2021 Planned Outage and Maintenance Summary – LEAP Meter Station Maintenance Update – October 29, 2021
+                             Notice Text :  The maintenance activity at LEAP Meter Station that commenced on October 28, 2021 is now complete. Effective immediately, capacity at the LEAP Meter Station will be reinstated to full capacity. If you have any questions, please contact Customer Services at 713-375-5900 or email Cheniere.CTPL@Cheniere.com. 
