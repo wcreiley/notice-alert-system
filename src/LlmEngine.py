@@ -16,14 +16,17 @@ from pathway.xpacks.llm.splitters import TokenCountSplitter
 class DocumentInputSchema(pw.Schema):
     doc: str
 
+
 class QueryInputSchema(pw.Schema):
     query: str
     user: str
+
 
 # This is based on https://github.com/pathwaycom/llm-app/tree/main/examples/pipelines/drive_alert
 class LlmEngine:
 
     def __init__(self):
+
         print("Initializing LlmEngine")
 
         dotenv.load_dotenv()
@@ -41,6 +44,7 @@ class LlmEngine:
         self.model_locator: str = os.environ.get("MODEL_LOCATOR", "gpt-3.5-turbo")
         self.max_tokens: int = int(os.environ.get("MAX_TOKEN", "400"))
         self.temperature: float = float(os.environ.get("TEMPERATURE", "0.0"))
+
         self.embedder = None
         self.index = None
         self.model = None
@@ -72,10 +76,7 @@ class LlmEngine:
             chunks=splitter(pw.this.texts, min_tokens=40, max_tokens=120)
         )
         documents = documents.flatten(pw.this.chunks)
-
-        # Why is chunks[0] used?
         documents = documents.select(chunk=pw.this.chunks[0])
-
         enriched_documents = documents + documents.select(data=self.embedder(pw.this.chunk))
 
         # The index is updated each time a file changes.
@@ -236,4 +237,3 @@ class LlmEngine:
 
 if __name__ == "__main__":
     LlmEngine().run()
-

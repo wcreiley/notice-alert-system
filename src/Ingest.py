@@ -6,8 +6,8 @@ import requests
 import argparse
 from bs4 import BeautifulSoup
 
-class TCEnergy:
 
+class TCEnergy:
     providerPrefix = "TCEnergy"
     docBaseUrl = "https://ebb.anrpl.com/Notices/"
     noticesUrl = f"{docBaseUrl}Notices.asp"
@@ -19,6 +19,7 @@ class TCEnergy:
             self.fetch_notice(noticeType)
 
     def fetch_notice(self, noticeType):
+
         params = {
             "sPipelineCode": "ANR",
             "sSubCategory": noticeType
@@ -70,15 +71,13 @@ class TCEnergy:
 
 
 class LngConfig:
-
     providerPrefix = "LngConfig"
     noticesUrl = "https://lngconnectionapi.cheniere.com/api/Notice/FilterNotices"
-
     docUrl = "https://lngconnectionapi.cheniere.com/api/Notice/Download"
-
     noticeTypes = ["9", "11"]
 
     def fetch_data(self):
+
         for noticeType in self.noticeTypes:
             self.fetch_notice(noticeType)
 
@@ -116,6 +115,7 @@ class LngConfig:
 class Ingest:
 
     def __init__(self):
+
         dotenv.load_dotenv()
 
         parser = argparse.ArgumentParser(description="Parse command-line arguments.")
@@ -127,24 +127,24 @@ class Ingest:
         self.test_sleep = args.sleep
 
     def ingest_data(self):
+
         LngConfig().fetch_data()
         TCEnergy().fetch_data()
 
-
     def test_data(self):
+
         def interleave_arrays(arr1, arr2):
-            # Interleave elements from both arrays
+
             interleaved = [item for pair in zip(arr1, arr2) for item in pair]
-
-            # Add remaining elements from the longer array
             interleaved.extend(arr1[len(arr2):] if len(arr1) > len(arr2) else arr2[len(arr1):])
-
             return interleaved
 
         print("Testing data ingestion...")
 
-        lng_files = [f for f in os.listdir("testData") if "lng" in f.lower() and os.path.isfile(os.path.join("testData", f))]
-        tcenergy_files = [f for f in os.listdir("testData") if "tcenergy" in f.lower() and os.path.isfile(os.path.join("testData", f))]
+        lng_files = [f for f in os.listdir("testData") if
+                     "lng" in f.lower() and os.path.isfile(os.path.join("testData", f))]
+        tcenergy_files = [f for f in os.listdir("testData") if
+                          "tcenergy" in f.lower() and os.path.isfile(os.path.join("testData", f))]
 
         # Sort files by id
         sorted_lng_files = sorted(lng_files, key=lambda f: int(f.split("_")[1].split(".")[0]))

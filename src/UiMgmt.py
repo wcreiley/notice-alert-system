@@ -4,6 +4,7 @@ import requests
 import streamlit as st
 from dotenv import load_dotenv
 
+
 # UI to allow human interaction with the LLM Engine
 #   This is based on https://github.com/pathwaycom/llm-app/tree/main/examples/pipelines/drive_alert
 class UiMgmt:
@@ -65,4 +66,3 @@ class UiMgmt:
 
 if __name__ == "__main__":
     UiMgmt().run()
-
