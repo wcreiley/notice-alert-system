@@ -87,13 +87,13 @@ class LlmEngine:
 
     def build_queries(self):
         # Part II: receive queries, detect intent and prepare cleaned query
+
         @pw.udf
         def build_prompt_check_for_alert_request_and_extract_query(query: str) -> str:
             prompt = f"""Evaluate the user's query and identify if there is a request for notifications on answer alterations:
                 User Query: '{query}'
             
-                Respond with 'Yes' if there is a request for alerts, and 'No' if not,
-                followed by the query without the alerting request part.
+                Respond with 'Yes' if there is a request for alerts, and 'No' if not, followed by the query without the alerting request part.
             
                 Examples:
                 "Tell me about windows in Pathway" => "No. Tell me about windows in Pathway"
@@ -175,7 +175,7 @@ class LlmEngine:
             if alert_flag:
                 if metainfo:
                     response += "\n" + str(metainfo)
-                return response + "\n\n Activated"
+                return response + f"\n\n Notification Sent to {self.slack_alert_channel_id}"
             return response
 
         # The context is a dynamic table: Pathway updates it each time:
@@ -207,38 +207,38 @@ class LlmEngine:
             result=construct_message(pw.this.response, pw.this.alert_enabled)
         )
 
-        # and send the answers back to the asking users
+        # send the answers back to the asking users
         self.response_writer(output)
 
     def send_alerts(self):
         # Part IV: send alerts about responses which changed significantly.
 
-        def build_prompt_compare_answers(new: str, old: str) -> str:
-            prompt = f"""
-                Are the two following responses different?
-                Answer with Yes or No.
-            
-                First response: "{old}"
-            
-                Second response: "{new}"
-                """
-            print(f"TODOWCR: prompt: {prompt}")
-            return prompt
+        # def build_prompt_compare_answers(new: str, old: str) -> str:
+        #     prompt = f"""
+        #         Are the two following responses different?
+        #         Answer with Yes or No.
+        #
+        #         First response: "{old}"
+        #
+        #         Second response: "{new}"
+        #         """
+        #     print(f"TODOWCR: prompt: {prompt}")
+        #     return prompt
 
-        def decision_to_bool(decision: str) -> bool:
-            return "yes" in decision.lower()
+        # def decision_to_bool(decision: str) -> bool:
+        #     return "yes" in decision.lower()
 
         @pw.udf
         def construct_notification_message(query: str, response: str) -> str:
             return f'New response for question "{query}":\n{response}'
 
-        def acceptor(new: str, old: str) -> bool:
-            if new == old:
-                return False
-
-            prompt = [dict(role="system", content=build_prompt_compare_answers(new, old))]
-            decision = asyncio.run(self.model.__wrapped__(prompt, max_tokens=20))
-            return decision_to_bool(decision)
+        # def acceptor(new: str, old: str) -> bool:
+        #     if new == old:
+        #         return False
+        #
+        #     prompt = [dict(role="system", content=build_prompt_compare_answers(new, old))]
+        #     decision = asyncio.run(self.model.__wrapped__(prompt, max_tokens=20))
+        #     return decision_to_bool(decision)
 
         # However, for the queries with alerts the processing continues
         # whenever the set of documents retrieved for a query changes,
