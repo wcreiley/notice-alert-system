@@ -28,8 +28,6 @@ function main() {
         echo "Executing action: '${action} ${@:2}'"
         "${function_to_call}" "${@:2}"
     fi
-
-
 }
 
 echo "Build Scripts"
