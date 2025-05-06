@@ -59,7 +59,7 @@ class TCEnergy:
             noticeId = result['Notice ID']
             viewUrl = result['Notice Type Desc']
 
-            filename = os.path.join("..", "data", f"{self.providerPrefix}_{noticeId}.html")
+            filename = os.path.join("data", f"{self.providerPrefix}_{noticeId}.html")
 
             if not os.path.exists(filename):
                 docResponse = requests.get(url=self.docBaseUrl + viewUrl)
@@ -104,7 +104,7 @@ class LngConfig:
 
         for notice in data:
             noticeId = notice['noticeId']
-            filename = os.path.join("..", "data", f"{self.providerPrefix}_{noticeId}.txt")
+            filename = os.path.join("data", f"{self.providerPrefix}_{noticeId}.txt")
 
             if not os.path.exists(filename):
                 docResponse = requests.get(url=self.docUrl, params={"tspNo": "200", "noticeId": noticeId})
