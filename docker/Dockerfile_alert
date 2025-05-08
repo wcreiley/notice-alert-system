@@ -1,0 +1,12 @@
+FROM python:3.13
+
+WORKDIR /app
+
+COPY docker/delayStart.sh .
+COPY src/AlertService.py .
+COPY requirements.txt .
+COPY .env .
+
+RUN pip install requests python-dotenv
+
+CMD ["./delayStart.sh", "python", "AlertService.py"]
