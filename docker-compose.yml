@@ -1,0 +1,36 @@
+version: "3.9"
+services:
+  engine:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile_engine
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/app/data
+  alert:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile_alert
+    environment:
+      PATHWAY_REST_CONNECTOR_HOST: "engine"
+    depends_on:
+      - engine
+  ui:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile_ui
+    ports:
+      - "8501:8501"
+    environment:
+      PATHWAY_REST_CONNECTOR_HOST: "engine"
+    depends_on:
+      - engine
+  ingest:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile_ingest
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      - engine
